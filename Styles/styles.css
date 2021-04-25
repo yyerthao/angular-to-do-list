@@ -1,4 +1,13 @@
 #background{
     background-color: rgb(6, 6, 6);
     color: white;
+    text-align: left;
+}
+
+#container{
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
 }
