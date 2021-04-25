@@ -2,6 +2,8 @@
     background-color: rgb(6, 6, 6);
     color: white;
     text-align: left;
+    font-family: 'IBM Plex Sans',
+    sans-serif;
 }
 
 #container{
