@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To Do List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<!-- THE ATTRIBUTE of the body 'ng-app'; states everything in the body will have to do with the to do list 		application file-->
+
+<body ng-app="ToDoList">
+    <div ng-controller="MainController">
+        <!-- 		<li> {{list[0]}} </li>
+		<li> {{list[1]}} </li>
+		<li> {{list[2]}} </li> -->
+
+        <!-- accessing list attribute in MainController -->
+        <!-- using ng-repeat directive to go through list attribute, similiar to for loop -->
+        <div ng-repeat="item in list">
+            <li> {{item}} </li>
+        </div>
+        <input ng-model="addToDo">
+        <button ng-click="addItem()">Add to To-Do List</button>
+    </div>
+    <!-- MODULES -->
+    <!-- connecting index.html to js file -->
+    <script src="Script/app.js"></script>
+    <!-- import our MainController to our index  -->
+    <script src="Controllers/MainController.js"></script>
+</body>
+
+</html>
+
+
+<!-- this is known as the view -->
